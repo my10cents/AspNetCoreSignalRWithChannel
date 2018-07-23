@@ -1,0 +1,23 @@
+<header>
+  <mat-toolbar color="primary">SignalR with Channel</mat-toolbar>
+</header>
+
+<section class="container">
+  <div class="row">
+    <mat-card class="col-md-6">
+      Type Channel: <input [(ngModel)]="user">
+      <p>Channel: {{user}}</p>
+      <br />Progress: {{progress}} %
+      <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+    </mat-card> <!-- we use mat-card instead of div -->
+    <mat-card class="col-md-6">
+      <button class="btn btn-primary"  (click)="openConnection()">Open Connection</button><br /><br />
+      <button class="btn btn-danger"   (click)="dropConnection()">Drop Connection</button><br /><br />
+      <button class="btn btn-Success"  (click)="startRemoteProcess()">Start Remote Task</button><br />
+    </mat-card>
+    <mat-card class="col-md-6 d-block d-lg-none">3</mat-card> <!-- will be hidden on large screens -->
+    <mat-card class="col-md-6 d-block d-lg-none">4</mat-card>
+  </div>
+</section>
+
+<!-- <footer></footer> -->
