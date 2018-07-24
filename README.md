@@ -4,7 +4,7 @@ Example of use SignalR with channel using Asp.Net Core 2.1 and Angular 6
 
 ## Usage
 
-1. Get project by clone
+1. To get project clone this repository
 	- Enter the command: `git clone https://github.com/my10cents/AspNetCoreSignalRWithChannel.git`
 	
 ## How to use backend Asp.Net Core 2.1
